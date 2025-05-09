@@ -1,0 +1,66 @@
+package com.mycompany.exercicios;
+
+public class Ex01 {
+    public static void main(String[] args) {
+        /**
+         * Exercícios sobre operadores
+         * 
+         * 1) Crie um programa que calcule e retorne a média de um aluno na disciplina de Física, 
+         * Ele tiou as notas: 8, 6.7, 8.1, 9.4
+         * 
+         * 2) Faça o cálculo de IMC de um aluno, você deve guardar informações como Peso e Altura
+         * e retornar o resultado.
+         * 
+         * 3) Faça um programa que retorne o valor do produto e o valor com desconto, 
+         * para o exercício considere um desconto de 35%.
+         */
+    }
+}
+
+* Programa para calcular a média de um aluno na disciplina de Física
+
+* Notas do aluno
+notas = [8, 6.7, 8.1, 9.4]
+
+* Cálculo da média
+media = sum(notas) / len(notas)
+
+* Exibindo o resultado
+print(f"A media do aluno na disciplina de Fisica é: {media:.2f}")
+
+///////////////////////////////////////////////////////////
+* Programa para calcular o IMC de um aluno
+
+* Função para calcular o IMC
+def calcular_imc(peso, altura):
+    imc = peso / (altura ** 2)
+    return imc
+
+* Entrada de dados
+peso = float(input("Digite o peso do aluno (em kg): "))
+altura = float(input("Digite a altura do aluno (em metros): "))
+
+* Cálculo do IMC
+imc = calcular_imc(peso, altura)
+
+* Exibindo o resultado
+print(f"O IMC do aluno é: {imc:.2f}")
+//////////////////////////////////////////////////////////
+* Programa para calcular o valor de um produto e o valor com desconto
+
+* Função para calcular o valor com desconto
+def calcular_desconto(valor_produto, percentual_desconto):
+    desconto = valor_produto * percentual_desconto
+    valor_com_desconto = valor_produto - desconto
+    return valor_com_desconto
+
+* Entrada de dados
+valor_produto = float(input("Digite o valor do produto: "))
+percentual_desconto = 0.35  # 35% de desconto
+
+* Cálculo do valor com desconto
+valor_com_desconto = calcular_desconto(valor_produto, percentual_desconto)
+
+* Exibindo os resultados
+print(f"Valor do produto: R$ {valor_produto:.2f}")
+print(f"Valor com desconto: R$ {valor_com_desconto:.2f}")
