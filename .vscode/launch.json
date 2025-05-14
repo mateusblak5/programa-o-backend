@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Aula03",
+            "request": "launch",
+            "mainClass": "com.mycompany.Aula03",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "IMCCalculator",
+            "request": "launch",
+            "mainClass": "com.mycompany.IMCCalculator",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
             "name": "Ex02",
             "request": "launch",
             "mainClass": "com.mycompany.Ex02",
