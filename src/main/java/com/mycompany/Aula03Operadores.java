@@ -1,36 +1,36 @@
 package com.mycompany;
 
 public class Aula03Operadores {
-     
+
      public static void main(String[] args) {
-        /**
-         * tipos de comentario
-         */
+          /**
+           * tipos de comentario
+           */
 
-        // Comentario de uma linha
+          // Comentario de uma linha
 
-         /**
-          * Comentarios de
-          * multiplas
-          * linhas
-          */
+          /**
+           * Comentarios de
+           * multiplas
+           * linhas
+           */
 
           /**
            * Comentários de
            * múltiplas
            * linhas
            * /
-           
-          /**
-           *  Declaração de variáveis
+           * 
+           * /**
+           * Declaração de variáveis
            */
-          
+
           String var1; // Toda variável declarada sem valor, automaticamente é null,
           String var2 = null; // variavel declarada com valor null
           String var3 = ""; // Variavel declarada com valor vazio (diferente de null)
 
           /**
-           *  operadores matematicos
+           * operadores matematicos
            */
 
           int num1 = 10;
@@ -56,3 +56,4 @@ public class Aula03Operadores {
           int divisao = num1 / num2;
           System.out.println("A divisao de " + num1 + " por " + num2 + " é: " + divisao);
      }
+}

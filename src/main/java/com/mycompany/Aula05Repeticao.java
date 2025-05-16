@@ -1,5 +1,7 @@
 package com.mycompany;
 
+import java.util.Scanner;
+
 public class Aula05Repeticao {
 
     public static void main(String[] args) throws InterruptedException {
@@ -32,7 +34,7 @@ public class Aula05Repeticao {
         // Scanner scan = new Scanner(System.in);
         // System.out.println("digite um numero :");
 
-        int numero = scan.nextint();
+        //int numero = scan.nextint();
         // System.out.println("voce digitou " + numero + " !!");
         /**
          * Do While (execute, enquanto)
@@ -42,11 +44,11 @@ public class Aula05Repeticao {
 
         int num1 = 1;
 
-        while (num != 0) {
+        while (num1 != 0) {
             Scanner scan = new Scanner(System.in);
             System.out.println("digite um numero : (0 para parar)");
 
-            num1 = scan.nextint();
+            num1 = scan.nextInt();
 
             System.out.println("voce digitou " + num1 + "!!");
         }
@@ -64,7 +66,7 @@ public class Aula05Repeticao {
             Scanner scan = new Scanner(System.in);
             System.out.println("digite um numero para encerrar: (0 para sair)");
 
-            num2 = scan.nextint();
+            num2 = scan.nextInt();
         } while (num2 != 0);
 
         System.out.println("execução encerrada");

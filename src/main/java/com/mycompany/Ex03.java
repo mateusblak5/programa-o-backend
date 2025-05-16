@@ -3,7 +3,7 @@ package com.mycompany;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Aula03 {
+public class Ex03 {
     public static void main(String[] args) {
         // Configura o Scanner para aceitar vírgula como separador decimal
         Scanner scanner = new Scanner(System.in);
