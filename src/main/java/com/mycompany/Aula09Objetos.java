@@ -36,10 +36,22 @@ public class Aula09Objetos {
         String marca;
         int ano;
         int quilometragem = 0;
-
+        
+        /**
+         * Método construtor
+         * 
+         * ele é chamado quando criamos uma nova instância
+         * da classe.
+         */
         public Carro(String modelo, String marca) {
-            
+            this.modelo = modelo;
+            this.marca = marca;
+        }
+
+        // Ações da classe
+        void andar(int km) {
+            this.quilometragem += km;
+            System.out.println("O carro está percorrendo " + km + "km");
         }
     }
-
 }
