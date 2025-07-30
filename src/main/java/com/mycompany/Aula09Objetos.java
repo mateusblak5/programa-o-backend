@@ -4,45 +4,57 @@ public class Aula09Objetos {
 
     public static void main(String[] args) {
         /*
-         * Em java, toda classe ou tipo abstrato é um objeto, pois possuem
-         * características
-         * e funcionalidades.
-         * Eles herdam funções da classe mãe java.lang.Object, é correto afirmar que
-         * java.lang.Object é uma super classe
+         * Em java, toda classe ou titulo abstrato é um objeto, pois possuem caracteristicas 
+         * e funcionalidades. 
+         * 
+         * Eles herdam funções da classe mãe java.lang.Object, é correto afirmar que java.main.Object é uma super classe
          * de qualquer outra classe ou tipo abstrato.
          */
-        Integer numero = 10;
-        int numero2 = 10;
+        Integer numero = 10; // Tipo abstrato
+        int numero2 = 10; // Tipo primitivo
 
-        // Restorna se a variavel/classe é uma instancia de outra classe
+        // Retorna se a variável/classe é uma instância de outra classe
         System.out.println(numero instanceof Object);
 
-        // Metodo compareTo pertence ao tipo abstrato integer
+        // Método compareTo pertence ao tipo abstrato integer
         numero.compareTo(numero2);
 
-        Carro carro = new Carro("chevrolet", "celta")
-        carro.andar(60);
+        //Instânciando uma classe
+        carro carro = new Carro(modelo:"celta".marca:"chevrolet");
+        carro.andar(km:60);
+        carro parar();
+
+        carro carro2 = new carro("celta", "chevrolet");
+
+        System.out.pryntln(carro == carro2);
+
+        System.out.println(carro instanceof Carro);
+        System.out.println(carro instanceof Object);
+
+
+
     }
 
     /*
-     * criando uma classe dentro de outra classe
+     * Criando uma classe dentro de outra classe
      * 
-     * é necessario utilizar a instituição static
+     * é nescessario utilizar a instrução static
      * entre public e class
      */
-    public static class Carro {
-        // atributos da classe
+    public static class carro {
+        // Atributos da classe
         String modelo;
         String marca;
         int ano;
         int quilometragem = 0;
-        
+
         /**
          * Método construtor
          * 
          * ele é chamado quando criamos uma nova instância
          * da classe.
          */
+
         public Carro(String modelo, String marca) {
             this.modelo = modelo;
             this.marca = marca;
@@ -51,7 +63,11 @@ public class Aula09Objetos {
         // Ações da classe
         void andar(int km) {
             this.quilometragem += km;
-            System.out.println("O carro está percorrendo " + km + "km");
+            System.out.println("o carro está percorrendo " + km + "km");
+        }
+
+        Void parar() {
+            System.out.println("O veiculo parou !! e percorreu umm total de " + this. quilometragem + "km")
         }
     }
 }
