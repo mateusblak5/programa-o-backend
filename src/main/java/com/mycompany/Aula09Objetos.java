@@ -20,13 +20,13 @@ public class Aula09Objetos {
         numero.compareTo(numero2);
 
         //Instânciando uma classe
-        carro carro = new Carro(modelo:"celta".marca:"chevrolet");
-        carro.andar(km:60);
-        carro parar();
+        Carro carro = new Carro("celta","chevrolet");
+        carro.andar(60);
+        carro.parar();
 
-        carro carro2 = new carro("celta", "chevrolet");
+        Carro carro2 = new Carro("celta", "chevrolet");
 
-        System.out.pryntln(carro == carro2);
+        System.out.println(carro == carro2);
 
         System.out.println(carro instanceof Carro);
         System.out.println(carro instanceof Object);
@@ -41,7 +41,7 @@ public class Aula09Objetos {
      * é nescessario utilizar a instrução static
      * entre public e class
      */
-    public static class carro {
+    public static class Carro {
         // Atributos da classe
         String modelo;
         String marca;
@@ -66,8 +66,8 @@ public class Aula09Objetos {
             System.out.println("o carro está percorrendo " + km + "km");
         }
 
-        Void parar() {
-            System.out.println("O veiculo parou !! e percorreu umm total de " + this. quilometragem + "km")
+        void parar() {
+            System.out.println("O veiculo parou !! e percorreu umm total de " + this. quilometragem + "km");
         }
     }
 }

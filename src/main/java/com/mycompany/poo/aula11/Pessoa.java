@@ -1,4 +1,4 @@
-package com.mycompany.poo.aula10.aula11;
+package com.mycompany.poo.aula11;
 
 public class Pessoa {
     /*
@@ -19,7 +19,7 @@ public class Pessoa {
     // Declaramos sempre após a declaração dos atributos
 
     // Método acessor , sempre começa com get
-    public String getnome() {
+    public String getNome() {
         return nome;
     }
 
